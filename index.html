@@ -3,9 +3,55 @@
   <meta charset="UTF-8">
   <title>Arseni web test</title>
   <link rel="stylesheet" href="src/scss/main.scss">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-  <main class="main">
-  </main>
+
+<main class="main">
+
+  <header class="profile">
+
+
+    <img class="profile-wallpaper" src="/img/walpp_1920x1000.png" alt="wallpaper">
+    <picture class="profile-image">
+      <img src="/img/ava_300x300.png" alt="Profile picture">
+    </picture>
+
+
+    <h1 class="profile-text">Arseni web</h1>
+  </header>
+
+  <nav class="menu__nav">
+
+    <button class="menu__nav__button" id="js-menu-button">Menu</button>
+
+    <ul class="menu__nav__list" id="js-menu">
+
+      <li class="menu__nav__list-item">
+        <a href="#" data-section="home" title="Go to home">Home</a>
+      </li>
+      <li class="menu__nav__list-item">
+        <a href="#" data-section="contact" title="Go to contact">Contact</a>
+      </li>
+      <li class="menu__nav__list-item">
+        <a href="#" data-section="services" title="Go to services">Services</a>
+      </li>
+      <li class="menu__nav__list-item">
+        <a href="#" data-section="about" title="Go to about">About</a>
+      </li>
+      <li class="menu__nav__list-item">
+        <a href="#" data-section="location" title="Go to location">Location</a>
+      </li>
+    </ul>
+  </nav>
+
+<footer>
+  Arseni web &copy; 2024. All rights reserved.
+</footer>
+
 </body>
 </html>

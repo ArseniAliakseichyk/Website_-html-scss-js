@@ -1,0 +1,63 @@
+@use "var" as *;
+
+html {
+  font-family: $prim-Font;
+  background-color: $color-bg;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-text;
+  background-color: $color-bg;
+
+  a {
+    color: $color-a;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-a2;
+      text-decoration: underline;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  background-color: $color-bg-main;
+  padding: 20px;
+
+  h1, h2 {
+    color: $color-prm;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  max-width: 1000px;
+  background-color: $color-prm;
+  color: $color-bg-footer;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
