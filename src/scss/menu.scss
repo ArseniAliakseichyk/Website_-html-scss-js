@@ -1,0 +1,76 @@
+@use "var" as *;
+.menu {
+  background-color: $color-prm;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  z-index: 1000;
+
+  &__header {
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    background-color: $color-bg;
+
+    &__button {
+      display: none;
+      background: none;
+      border: none;
+      color: $color-prm;
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      cursor: pointer;
+
+      @media (max-width: $point-px) {
+        display: block;
+      }
+    }
+
+    &__list {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+
+      @media (max-width: $point-px) {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: $color-bg;
+      }
+
+      &.active {
+        display: flex;
+      }
+
+      &-item {
+        margin: 0 10px;
+        font-size: 1rem;
+
+        @media (max-width: $point-px) {
+          margin: 10px 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        a {
+          color: $color-prm;
+          text-decoration: none;
+          display: block;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
