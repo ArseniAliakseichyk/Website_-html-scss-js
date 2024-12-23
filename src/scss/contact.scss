@@ -1,0 +1,39 @@
+@use "var" as *;
+
+#contact address ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    color: $color-text;
+
+    &:nth-child(1) span:before,
+    &:nth-child(2) span:before,
+    &:nth-child(3) span:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      background-color: $color-prm;
+    }
+
+    &:nth-child(1) span:before {
+      mask-image: url("/img/icon/email.svg");
+    }
+    &:nth-child(2) span:before {
+      mask-image: url("/img/icon/phone.svg");
+    }
+    &:nth-child(3) span:before {
+      mask-image: url("/img/icon/map-marker.svg");
+    }
+
+    a {
+      margin-left: 24px;
+    }
+  }
+}

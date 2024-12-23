@@ -1,0 +1,58 @@
+@use "var" as *;
+
+.post {
+  background-color: $color-bg-footer;
+  border: 1px solid #4b493f;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .post-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-user-info {
+      .post-user-name {
+        font-size: 1.2rem;
+        margin: 0;
+        color: $color-prm;
+      }
+
+      .post-time {
+        font-size: 0.9rem;
+        color: $color-text;
+      }
+    }
+  }
+
+  .post-content {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .post-footer {
+    display: flex;
+    justify-content: space-around;
+
+    .post-like-button, .post-comment-button, .post-share-button {
+      background-color: $color-scnd;
+      border: none;
+      color: $color-text;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $color-a2;
+      }
+    }
+  }
+}
