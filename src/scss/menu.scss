@@ -1,5 +1,8 @@
 @use "var" as *;
 .menu {
+  .menu__nav__list{
+    border-radius: 5px;
+  }
   background-color: $color-prm;
   width: 100%;
   max-width: 1000px;
@@ -8,13 +11,13 @@
   flex-wrap: wrap;
   padding: 20px;
   z-index: 1000;
+  border-radius: 5px;
 
   &__header {
     margin: 0;
 
     a {
       text-decoration: none;
-      color: white;
     }
   }
 
