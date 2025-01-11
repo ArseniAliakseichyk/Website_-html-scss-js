@@ -7,7 +7,7 @@
 }
 
 .like-button {
-  background-color: $color-prm;
+  background-color: $color-bg;
   color: $color-text;
   border: none;
   padding: 10px 20px;
@@ -20,8 +20,19 @@
 
   &:hover {
     background-color: $color-a2;
+    color: $color-bg;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      background-color: $color-bg;
+      mask-image: url("/img/icon/like.svg");
+      mask-size: cover;
+      
+    }
   }
-
   &::before {
     content: "";
     display: inline-block;
@@ -31,5 +42,9 @@
     background-color: $color-text;
     mask-image: url("/img/icon/like.svg");
     mask-size: cover;
+    
   }
+
+  
+  
 }
